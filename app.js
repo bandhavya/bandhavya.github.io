@@ -10,6 +10,13 @@ if ('serviceWorker' in navigator) {
             console.log('Service worker active');
         }
 
+        // Check for showNotification support.
+        if (!(serviceReg.showNotification)) {
+            console.log('Notifications aren\'t supported on service workers.');
+        } else {
+            console.log('Notifications are supported on service workers.');
+        }
+
     }).catch(function(error) {
         // registration failed
         console.log('Registration failed with ' + error);
@@ -20,6 +27,8 @@ if ('serviceWorker' in navigator) {
 
 var imgURLs = ['images/heidi.jpg', 'images/heidiImg.jpg', 'images/nature.jpg', 'images/rose.jpg'];
 
+
+// sample code to load the images via xhr.
 function imgLoad(url) {
     var executor = function (resolve, reject) {
         var xhrReq = new XMLHttpRequest();
