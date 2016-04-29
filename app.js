@@ -1,20 +1,20 @@
 // Register the service worker.
-//if ('serviceWorker' in navigator) {
-//    navigator.serviceWorker.register('/serviceWorker/service.js', {scope : '/serviceWorker/'}).then (function(serviceReg) {
-//
-//        if(serviceReg.installing) {
-//            console.log('Service worker installing');
-//        } else if(serviceReg.waiting) {
-//            console.log('Service worker installed');
-//        } else if(serviceReg.active) {
-//            console.log('Service worker active');
-//        }
-//
-//    }).catch(function(error) {
-//        // registration failed
-//        console.log('Registration failed with ' + error);
-//    });
-//}
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/serviceWorker/service.js', {scope : '/serviceWorker/'}).then (function(serviceReg) {
+
+        if(serviceReg.installing) {
+            console.log('Service worker installing');
+        } else if(serviceReg.waiting) {
+            console.log('Service worker installed');
+        } else if(serviceReg.active) {
+            console.log('Service worker active');
+        }
+
+    }).catch(function(error) {
+        // registration failed
+        console.log('Registration failed with ' + error);
+    });
+}
 
 
 
