@@ -2,13 +2,13 @@ this.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('cacheV1').then(function (cache) {
             cache.addAll([
-                '/serviceWorker/',
-                '/serviceWorker/images/heidi.jpg',
-                '/serviceWorker/images/heidiImg.jpg',
-                '/serviceWorker/images/nature.jpg',
-                '/serviceWorker/rose.jpg',
-                '/serviceWorker/index.html',
-                '/serviceWorker/app.js'
+                '/bandhavya.github.io/',
+                '/bandhavya.github.io/images/heidi.jpg',
+                '/bandhavya.github.io/images/heidiImg.jpg',
+                '/bandhavya.github.io/images/nature.jpg',
+                '/bandhavya.github.io/rose.jpg',
+                '/bandhavya.github.io/index.html',
+                '/bandhavya.github.io/app.js'
             ]);
         })
     );
