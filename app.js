@@ -1,6 +1,6 @@
 // Register the service worker.
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/serviceWorker/service.js', {scope : '/serviceWorker/'}).then (function(serviceReg) {
+    navigator.serviceWorker.register('/bandhavya.github.io/service.js', {scope : '/bandhavya.github.io/'}).then (function(serviceReg) {
 
         if(serviceReg.installing) {
             console.log('Service worker installing');
