@@ -7,7 +7,7 @@ this.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('cacheV1').then(function (cache) {
             cache.addAll([
-                //'/bandhavya.github.io/',
+                '/bandhavya.github.io/',
                 '/bandhavya.github.io/images/heidi.jpg',
                 '/bandhavya.github.io/images/heidiImg.jpg',
                 '/bandhavya.github.io/images/nature.jpg',
