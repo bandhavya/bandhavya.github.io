@@ -1,0 +1,15 @@
+[
+    {
+        'flightName': 'British Airlines',
+        'departureTime' : '5:00 AM'
+    }, {
+        'flightName': 'Indian Airlines',
+        'departureTime': '7:00 AM'
+    }, {
+        'flightName': 'Blah Blah Airlines',
+        'departureTime': '8:30 PM'
+    }, {
+        'flightName': 'Fast Airlines',
+        'departureTime': '9:00 PM'
+    }
+]
